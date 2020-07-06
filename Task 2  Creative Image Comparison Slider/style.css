@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: url(./images/blue-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.container-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 0;
+  background: url(./images/red-bg.jpg) no-repeat;
+  filter: blur(0.5rem);
+  background-size: cover;
+  border-right: 10px solid #333333;
+  z-index: 1;
+}
+
+.h1 {
+  font-family: "Lobster Two", cursive;
+  font-size: 72px;
+  background: linear-gradient(
+    116.59835788634541deg,
+    rgba(214, 184, 64, 1) 60%,
+    rgba(213, 184, 64, 1) 40%,
+    rgba(198, 208, 207, 1) 97%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 10;
+}
+
+h1 span {
+  font-family: "Metal Mania", cursive;
+  font-weight: 300;
+  z-index: 10;
+}
+
+.img-phone {
+  background: url(./images/blue.png);
+  width: 600px;
+  height: 300px;
+  position: relative;
+  z-index: 10;
+  position: relative;
+}
+.img-phone-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 600px;
+  background: url(./images/red.png);
+  z-index: 10;
+}
+.img-phone::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 300px;
+  background: url(./images/phone.png);
+  z-index: 10;
+}
+
+#bar {
+  margin-top: 10px;
+  z-index: 10;
+  background-color: rgb(36, 90, 137);
+  height: 20px;
+  width: 500px;
+  -webkit-appearance: none;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: inset -4px -4px 7px rgba(36, 90, 137, 0.6),
+    inset 4px 4px 7px rgba(0, 0, 0, 0.6);
+}
+
+#bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0c597a;
+  box-shadow: 4px 4px 7px#0c192a, inset -4px -4px 7px rgba(0, 0, 0, 0.3);
+}

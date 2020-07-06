@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  min-height: 100vh;
+}
+nav {
+  position: relative;
+  display: flex;
+}
+nav a {
+  padding: 1rem;
+  font-size: 2em;
+  color: blueviolet;
+  text-decoration: none;
+}
+nav a:hover {
+  color: blueviolet;
+  background-color: black;
+}
+nav #marker {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: #fff;
+  top: 100%;
+  border-radius: 4px;
+  transition: 0.5s;
+}
