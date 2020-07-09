@@ -4,10 +4,10 @@ function more() {
     const container = document.querySelector(".container");
     let stars = document.createElement("span");
     let posleft = Math.floor(Math.random() * window.innerWidth);
-    let height = Math.floor(Math.random() * 100);
+    let height = Math.floor(Math.random() * 100) + 100;
 
     stars.style.left = posleft + "px";
-    stars.style.height = 100 + height + "px";
+    stars.style.height = height + "px";
 
     let duration = Math.random() * 1;
     stars.style.animationDuration = duration + "s";

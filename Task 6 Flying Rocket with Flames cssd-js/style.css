@@ -10,6 +10,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 .warper {
   z-index: 1000;
@@ -38,24 +39,32 @@ body {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 150px;
-
   background: linear-gradient(aqua, transparent 70%);
 }
+.warper::before {
+  content: "";
+  position: absolute;
+  top: 112%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 150px;
+  background: linear-gradient(aqua, transparent 70%);
+  filter: blur(20px);
+}
 svg {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 200px;
 }
 .container span {
   position: absolute;
-  top: -100px;
   background: linear-gradient(white, transparent 70%);
+  top: -100px;
   width: 1px;
   animation: animestars linear;
   animation-iteration-count: infinite;
 }
 @keyframes animestars {
-  0% {
-  }
   100% {
     top: 100vh;
   }
