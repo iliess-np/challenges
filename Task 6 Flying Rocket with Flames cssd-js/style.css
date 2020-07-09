@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 body {
-  background: #333;
+  background: linear-gradient(
+    180.49641188998174deg,
+    rgba(0, 0, 0, 1) -2.207999999999984%,
+    rgba(14, 10, 50, 1) 82.912%,
+    rgba(15, 11, 51, 1) 82.912%
+  );
 }
 .container {
   width: 100%;
