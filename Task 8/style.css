@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section h2 {
+  font-size: 6em;
+  color: #ffffff;
+  font-weight: 500;
+}
+.box,
+.box2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+}
+.box h2,
+.box2 h2 {
+  font-size: 3em;
+}
+
+.box2 {
+  background: #000;
+  color: #ffffff;
+}
