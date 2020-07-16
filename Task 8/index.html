@@ -17,10 +17,12 @@
       <img src="./images/bg1.png" alt="" class="pic" />
     </div>
     <div class="box2">
-      <h2 class="text4">so now</h2>
-      <h2 class="text5">what do you think</h2>
-      <h2 class="text6">is it any good</h2>
-      <img src="./images/bg2.png" alt="" class="pic" />
+      <div class="bg-change">
+        <h2 class="text4">so now</h2>
+        <h2 class="text5">what do you think</h2>
+        <h2 class="text6">is it any good</h2>
+        <img src="./images/bg2.png" alt="" class="pic2" />
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
@@ -31,7 +33,7 @@
             trigger: ".box",
             start: "center center",
             end: "bottom top",
-            markers: "true",
+            markers: false,
             scrub: true,
             pin: true,
           },
@@ -46,12 +48,16 @@
             trigger: ".box2",
             start: "center center",
             end: "bottom top",
-            markers: "true",
+            markers: false,
             scrub: true,
             pin: true,
           },
         })
-        .from(".box2", { opacity: 0 });
+        .from(".box2", { opacity: 0 })
+        .from(".text4", { y: innerHeight * -1 })
+        .from(".text5", { x: innerWidth * -1 })
+        .from(".text6", { x: innerWidth * -1, y: innerHeight * -1 })
+        .from(".pic2", { x: innerWidth * 1, scale: 0 });
     </script>
   </body>
 </html>
