@@ -1,6 +1,6 @@
 Creative Image Comparison Slider
 
-![Alt Text]()
+![Alt Text](https://media3.giphy.com/media/YOeMVJaUWtmsnqLhNy/200.gif)
 
 Custom Range Slider Responsive bg
 
