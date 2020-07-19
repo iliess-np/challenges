@@ -60,6 +60,7 @@ body {
 svg {
   width: 100px;
   height: 200px;
+  fill: whitesmoke;
 }
 .container span {
   position: absolute;
