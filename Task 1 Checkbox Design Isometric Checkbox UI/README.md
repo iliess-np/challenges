@@ -7,7 +7,7 @@ Hint 3 Checkbox Design CSS only Isometric Checkbox UI
 
 ![Alt Text](https://media1.giphy.com/media/VHeG4iZnONfXhhgxQU/200.gif)
 
-card move up on hover
+card move up on hover Pure CSS no JS used
 
 ![Alt Text](https://media2.giphy.com/media/eguSBvNAp7D87Oy56f/200.gif)
 
