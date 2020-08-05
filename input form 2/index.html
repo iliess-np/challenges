@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>input form style 2</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="change">
+        <ul>
+          Contact info
+          <li>
+            <i class="rep fa-2x fas fa-map-marked-alt"></i> 2912 Meadowbrook
+            Road Los Angeles, CA 90017
+          </li>
+          <li>
+            <i class="rep fa-2x fas fa-envelope-open-text"></i> lorem@ipsum.com
+          </li>
+          <li><i class="rep fa-2x fas fa-phone-volume"></i> 310-386-1623</li>
+        </ul>
+        <div class="share-icon">
+          <a href=""><i class="share fab fa-facebook-f"></i></a>
+          <a href=""><i class="share fab fa-twitter"></i></a>
+          <a href=""><i class="share fab fa-instagram"></i></a>
+          <a href=""><i class="share fab fa-pinterest-p"></i></a>
+          <a href=""><i class="share fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="normal">
+        <h2>Send a Message</h2>
+        <form>
+          <div class="fName-div">
+            <span class="fName">First Name</span>
+            <input
+              onfocusout="removeFName()"
+              onfocus="moveFName()"
+              type="text"
+              required
+            />
+          </div>
+          <div class="lName-div">
+            <span class="lName">Last Name</span>
+            <input
+              onfocusout="removeLName()"
+              onfocus="moveLName()"
+              type="text"
+              required
+            />
+          </div>
+          <div class="email-div">
+            <span class="email">Email Address</span>
+            <input
+              onfocusout="removeEmail()"
+              onfocus="moveEmail()"
+              type="email"
+              required
+            />
+          </div>
+          <div class="tel-div">
+            <span class="tel">Mobile Number</span>
+            <input
+              onfocusout="removeTel()"
+              onfocus="moveTel()"
+              type="tel"
+              required
+            />
+          </div>
+          <div class="textarea">
+            <span class="message">Write your Message here...</span>
+            <textarea
+              onfocusout="removeMessage()"
+              onfocus="moveMessage()"
+              name="textArea"
+              cols="30"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button class="btn-submit" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/781bdd086b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

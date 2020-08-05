@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>input form</title>
+  </head>
+  <body>
+    <section>
+      <form>
+        <h1>CONTACT US</h1>
+        <div>
+          <span class="text">Full Name</span>
+          <input onfocusout="textBack()" onfocus="moveText()" type="text" />
+        </div>
+        <div>
+          <span class="email">Email Address </span
+          ><input onfocusout="emailBack()" onfocus="moveEmail()" type="email" />
+        </div>
+        <div>
+          <span class="text-area"> Type Your Message Here </span
+          ><input onfocusout="areaBack()" onfocus="moveArea()" type="text" />
+        </div>
+        <button id="submit-form">Submit</button>
+      </form>
+      <img src="./img/office-girl.png" alt="" />
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

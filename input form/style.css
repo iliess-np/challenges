@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Tahoma;
+  background-color: rgb(14, 27, 50);
+}
+section {
+  background-image: linear-gradient(
+    116.34728955009177deg,
+    rgba(2, 27, 62, 1) 74.45445949243535%,
+    rgba(255, 0, 43, 1) 74.88866520253782%
+  );
+  width: 75%;
+  display: flex;
+  position: relative;
+}
+section > * {
+  margin-left: 5em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+form h1 {
+  margin: 2rem 0;
+  color: whitesmoke;
+  font-weight: 540;
+}
+input {
+  font-size: 1em;
+  padding: 0.5em;
+  margin-bottom: 2rem;
+  width: 150%;
+  border: none;
+  color: whitesmoke;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  outline: 0;
+  position: relative;
+}
+form button {
+  width: 7em;
+  padding: 0.7em;
+  font-size: 1em;
+  font-weight: 550;
+  background-color: rgba(255, 0, 43, 1);
+  border: none;
+  color: antiquewhite;
+  outline: 0;
+  margin-bottom: 5em;
+  cursor: pointer;
+}
+img {
+  position: absolute;
+  transform: scaleX(-1);
+  right: 0;
+  top: 3em;
+}
+div {
+  position: relative;
+}
+.text,
+.email,
+.text-area {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  top: 10px;
+  transition: all 0.25s ease;
+}
+#moveMe {
+  position: absolute;
+  color: rgba(9, 243, 9, 0.7);
+  top: -25%;
+  transform: scale(0.9);
+}

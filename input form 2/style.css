@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 180, 216, 1) 20.181414714494878%,
+    rgba(0, 180, 216, 1) 47.55724972547584%,
+    rgba(0, 48, 73, 1) 47.68225353831137%,
+    rgba(0, 48, 73, 1) 80.18324487554904%
+  );
+  height: 100vh;
+}
+.section {
+  display: flex;
+  margin: 5rem 7rem 5rem 15rem;
+  background-color: whitesmoke;
+  height: 80vh;
+  position: relative;
+  box-shadow: 10px 20px 50px rgba(0, 0, 0, 1);
+}
+.change {
+  background-color: #003049;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 10%;
+  left: -20%;
+  width: 35%;
+  height: 80%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.623);
+}
+.change ul {
+  font-size: 1.5rem;
+  padding: 3rem 3rem 2rem 3rem;
+  color: aliceblue;
+}
+.change li {
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  padding-top: 1.5rem;
+  font-size: 0.8em;
+  list-style: none;
+  position: relative;
+  color: rgba(240, 248, 255, 0.4);
+}
+.change li:hover {
+  color: rgba(240, 248, 255, 0.7);
+}
+.rep {
+  position: absolute;
+  right: 87%;
+  transform: scale(0.7);
+}
+.fa-phone-volume {
+  transform: scale(0.7) rotate(-30deg);
+}
+.share-icon {
+  margin: 1rem 1rem 3rem 2rem;
+}
+.share-icon a {
+  padding: 0.7rem;
+  font-size: 2rem;
+}
+.share {
+  color: rgba(240, 248, 255, 0.4);
+}
+.share-icon a:hover .share {
+  color: aqua;
+}
+.normal {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 3rem 2rem 13rem;
+  width: 100%;
+}
+.normal h2 {
+  padding-bottom: 2rem;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  width: 100%;
+}
+form div {
+  margin-bottom: 2.5rem;
+  position: relative;
+  width: 100%;
+}
+form input,
+form textarea {
+  padding: 0.5rem 0 0 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(141, 141, 141);
+  outline: 0;
+  width: 100%;
+}
+.textarea {
+  grid-column: 1 / 3;
+  margin-bottom: 0;
+}
+.fName-div,
+.email-div {
+  padding-right: 3em;
+}
+
+form span {
+  position: absolute;
+  top: 25%;
+  left: 1%;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+.btn-submit {
+  background-color: rgb(0, 48, 73);
+  color: aliceblue;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  width: fit-content;
+}
+
+#moveme {
+  position: absolute;
+  top: -100%;
+  left: -1%;
+  transform: scale(0.9);
+  color: #2a9d8f;
+}
+
+#movemessage {
+  position: absolute;
+  top: -50%;
+  left: -1%;
+  transform: scale(0.9);
+  color: #2a9d8f;
+}
