@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 200vh;
+}
+.sec {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 200px);
+  background: #2abbff;
+}
+.sec .imgWarper {
+  position: absolute;
+  bottom: -200px;
+  width: 100%;
+  height: 200px;
+  transform-origin: top;
+}
+
+.sec .imgWarper img {
+  width: 100%;
+  height: 100%;
+}
